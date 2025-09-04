@@ -1,0 +1,3 @@
+- the runnable class run method return type is void 
+- we cannot return anything with runnable class
+- we need to implement Callable for the same 
