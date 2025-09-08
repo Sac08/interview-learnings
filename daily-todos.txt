@@ -1,5 +1,12 @@
 6/sept
--- binary tree finish
+-- binary tree finish : DONE
+-- SD 1 question : MEH
+-- LLD implement : MEH
+-- Greedy (optional) : MEH
+
+7/sept
 -- SD 1 question 
--- remaining LLD implement
--- Greedy (optional) 
+-- study and implement standard Design Patterns
+-- JVM (overview, how it works, internals etc) - DONE
+-- Java concepts like interfaces, abstraction, and multithreading. top 100 java : this takes time
+-- prepare self intruduction
