@@ -20,3 +20,48 @@
 - finish HLD Tracker by 14th Sept
 - Array, Binary search, two pointers, stack, Misc (left : recursion + dp, maths, geeedy, heap)
 - daily 1 LLD question mock 
+
+
+
+---------
+
+25th sept:
+- until diwali need to make one plan
+- focus areas:
+    - prio 1: revision of all things until now, new coding questions to keep continued practice, HLD 3-4 topics, LLD 3-4 topics implement by hand
+- thinking morning 2 new probs solve + anki flash card for 30 mins
+- behavioural target
+
+
+
+what i want to achieve till 5th of sept ? (10 days)
+- finish all remaining probs from fraz
+- complete revision HLD, LLD probs
+- complete anki revision once
+- behavior glance
+
+action items ------
+- new LC probs -
+BFS/DFS : 7
+Misc : 9
+HEAP : 6
+LINKED LIST : 0
+GRAPH : 4
+STACK : 1
+TWO POINTER : 1
+BINARY SEARCH : 1
+HASH TABLE : 0
+GREEDY  : 9
+MATHS : 2
+STRING : 4
+RECURSION : 
+DP : 10
+TREE : 9
+ARRAY : 4
+
+Total 67 : daily (5 i can target)
+
+
+
+6th & 7th prepare agoda
+8th revise all HLD if possible

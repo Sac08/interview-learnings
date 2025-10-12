@@ -2,7 +2,7 @@ package LLD.DesignPatterns.abstractfactory.post;
 
 public class Main {
     public static void main(String args[]) {
-        String theme = "DA1RK";
+        String theme = "DARK";
         UIFactory uiFactory;
 
         if (theme.equals("DARK")) {
