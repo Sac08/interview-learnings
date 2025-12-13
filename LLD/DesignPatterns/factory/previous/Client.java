@@ -6,10 +6,16 @@ import LLD.DesignPatterns.factory.post.Square;
 
 public class Client {
     public static void main(String[] args) {
-        Shape rectangle = new Rectangle();
-        Shape square = new Square();
+        String type = "rectangle";
 
-        rectangle.draw();
-        square.draw();
+        Shape shape = null;
+
+       if ("rectangle".equals(type)) {
+            shape = new Rectangle();
+        } else if ("square".equals(type)) {
+            shape = new Square();
+        }
+
+        shape.draw();
     }
 }

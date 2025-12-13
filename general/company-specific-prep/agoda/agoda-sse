@@ -1,0 +1,190 @@
+Type
+- OA
+- coding (2 probs 1hr)
+- HLD
+- HR
+
+
+HLD
+- file storage
+-  prometheus and grafana.
+
+
+
+4 parts 
+- security part (how security works in web dev) eg http request flow, jwt token, cookies session, storage, authentication authorization
+- web development eg react fundamentals (redux, react hooks, context api) fundamental questions
+- optimization and technique : page is slow, component derivind slow
+
+Expectations: good communication skill, thought process
+
+
+
+-----
+https://chatgpt.com/c/68c7ad9f-3724-8323-8758-caaaf70643c0
+
+📆 7-Day Agoda Interview Crash Plan
+Day 1 – Web Protocols & Security
+
+✅ Revise:
+
+HTTP vs HTTPS (TLS/SSL, handshakes).
+
+Cookies vs JWT vs OAuth (trade-offs).
+
+DNS, CDN, browser caching (real-world latency improvements).
+
+Browser storage (localStorage, sessionStorage, IndexedDB).
+
+✅ Practice:
+
+Be ready to explain how HTTPS secures login flow.
+
+Draw a quick diagram of JWT auth with refresh tokens.
+
+🎯 Goal: You can explain why and when to use each security feature with examples.
+
+Day 2 – Core Web Concepts
+
+✅ Revise:
+
+SSR vs CSR (trade-offs: SEO, performance, infra).
+
+DOM manipulation & event loop.
+
+Async programming (Promises, async/await).
+
+JavaScript fundamentals (closure, scope, hoisting, prototypes).
+
+✅ React focus:
+
+Lifecycle with hooks.
+
+Context vs Redux vs lifting state.
+
+Component architecture & performance tuning.
+
+🎯 Goal: Be confident in comparing and contrasting, not just definitions.
+
+Day 3 – Performance Optimization
+
+✅ Tools:
+
+Chrome DevTools (Performance tab, Network tab, Lighthouse basics).
+
+Bundle analysis (Webpack, code splitting, tree shaking).
+
+✅ Topics:
+
+Lazy loading, caching, prefetching.
+
+Diagnosing memory leaks.
+
+✅ Practice:
+
+Prepare 1 real story of how you optimized frontend performance.
+
+🎯 Goal: Be able to walk through how you’d debug slowness step by step.
+
+Day 4 – Testing
+
+✅ Revise:
+
+Testing pyramid (unit vs integration vs E2E).
+
+Tools: Jest, React Testing Library, Cypress/Playwright basics.
+
+Mocks and stubs.
+
+✅ Practice:
+
+Example: “How do you test a login page with API + UI?”
+
+Think of challenges: flaky tests, slow E2E, CI/CD integration.
+
+🎯 Goal: Show leadership in testing culture, not just writing tests.
+
+Day 5 – Communication & Storytelling
+
+✅ Prepare 3–4 STAR stories:
+
+Led technical decision.
+
+Improved performance/debugged critical issue.
+
+Cross-team collaboration.
+
+Testing or process improvement.
+
+✅ Practice explaining step-by-step to a non-technical person.
+
+🎯 Goal: You sound structured, logical, and confident.
+
+Day 6 – Mixed Mock Practice
+
+✅ Do a mock interview round:
+
+Pick 2 frontend questions (protocols + React).
+
+1 coding DSA problem (medium-level, array/stack/string).
+
+Practice explaining out loud.
+
+✅ Record yourself (optional) → check clarity & pacing.
+
+🎯 Goal: Smooth delivery under time pressure.
+
+Day 7 – Final Review & Polish
+
+✅ Quick revision of:
+
+JS/React fundamentals.
+
+Web security flows.
+
+Performance checklist.
+
+✅ Light coding practice (1–2 problems, focus on clarity).
+
+✅ Sleep early + prepare environment for interview.
+
+🎯 Goal: High confidence, clear communication, sharp recall.
+
+
+
+------------------------
+
+why switch ?
+“I’m happy with my work at Walmart, but I’m looking for new challenges in a product-driven, global company like Agoda, where I can grow faster and make a bigger impact.”
+
+Why Agoda?
+“Agoda is a leader in the travel-tech industry, and my experience at Walmart involved building scalable systems that impacted millions of users, which aligns perfectly with Agoda’s goals. The tech stack I used at Walmart, like Spark and Kafka, closely matches what Agoda uses, so I can hit the ground running.”
+
+Why Bangkok?
+“Bangkok is Agoda’s largest tech hub, and I’m excited about the opportunity to work closely with an international team of brilliant engineers. Plus, I’m looking forward to experiencing Bangkok’s vibrant culture.”
+
+
+
+Then in next 30 minutes, I was asked to design a system where you are required to find the inventory of the hotels. You will be querying the agoda's internal data as well as call the external services like makemytrip, bookings.com to get the inventory data as well.
+
+Conducted by a Lead Engineer, I was tasked with designing a Hotel Review System that integrates with external APIs(JOBS) to update review ratings and updates search query based on it.
+
+read about multiple source data coming in whats best approach, also querying accross multiple sites to get data
+
+Asked to design a platform like Booking.com, focusing on search and booking services.
+
+Need to design a system which is getting the transactions data from 3 different formats (message queue, mysql and csv file) such that internal user can approve or reject any transactions. Then the approved transactions will be sent to banks sftp server for settlement.
+
+how would implement a banner which number of user currently viewing a property in travel booking website
+
+ System design question which was about creating a file storage service
+
+ Design Top K heavy hitter problem with log aggregation and low latency requirements.
+
+ design payment system like stripe
+
+ . Design Reconcialiation system of a Car dealer showroom
+
+design whatsapp, elavator LLD (https://leetcode.com/discuss/post/5978891/agoda-sse-interview-experience-bangkok-o-iikh/)
+
+https://www.hellointerview.com/premium/checkout?duration=year&referralCode=gtz9h3GB

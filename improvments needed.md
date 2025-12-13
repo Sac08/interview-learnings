@@ -1,0 +1,12 @@
+- challanging work, why it was, how you solved
+- prepare good intro
+- byheart few standard lines with technicality voices eg
+    - let me take few mins to analyze the problem statement
+    - 
+- prepare question for interviewer
+- study grilling points for HLD
+    - how to avoid db choking
+    - how to handle burst of db calls at certain point
+- more new practice problems
+    - dp, graph
+- behavioural prep

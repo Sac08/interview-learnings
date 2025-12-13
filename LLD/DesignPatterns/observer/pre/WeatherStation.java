@@ -33,3 +33,7 @@ class LaptopDisplay {
         System.out.println("LaptopDisplay Display");
     }
 }
+/*
+Observer Pattern keeps publisher and subscribers loosely coupled, flexible, and extensible.
+Without it, you get rigid, hardcoded, unscalable, OCP-violating code.
+ */

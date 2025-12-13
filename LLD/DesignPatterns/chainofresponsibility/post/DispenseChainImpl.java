@@ -9,7 +9,6 @@ public class DispenseChainImpl implements  DispenseChange {
     DispenseChainImpl(int noteValue, int noteQty) {
         this.numNotes= noteQty;
         this.noteValue = noteValue;
-
     }
 
     @Override

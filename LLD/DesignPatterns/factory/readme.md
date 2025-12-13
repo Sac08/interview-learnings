@@ -8,7 +8,7 @@ Adding a new type (e.g., Triangle) requires changing everywhere the class is cre
 
 Duplicate object creation logic scattered across code.
 
-Violates Open/Closed Principle (code is open to modification).
+Violates Open/Closed Principle (code is open to modification). Adding new shapes involves only modifying or extending factory, not client.
 
 Hard to manage runtime decisions (e.g., creating objects based on input/config).
 

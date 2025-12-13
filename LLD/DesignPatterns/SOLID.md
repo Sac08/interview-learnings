@@ -70,9 +70,17 @@ Subtypes must be **substitutable for their base types**.
 or
 Subclasses should not break the behavior of the parent class
 
-**Why:**
-- Avoids surprises in polymorphic code
-- Prevents fragile inheritance
+
+### Pros
+- Makes inheritance safe and predictable
+- Improves polymorphism and code reusability
+- Prevents unexpected runtime issues
+- Leads to cleaner, more maintainable designs
+
+### Cons
+- Harder to design correct inheritance hierarchies
+- Can force extra abstraction to avoid violation
+- Inheritance sometimes becomes too restrictive
 
 **Java Example:**
 ❌ BAD - Violates LSP
@@ -115,12 +123,14 @@ public void move() {
 System.out.println("Ostrich is running");
 }
 }
-```
+
 
 // Works with any Bird subclass
 public void makeBirdMove(Bird bird) {
 bird.move(); // Works correctly for all birds
 }
+
+```
 
 ---
 
@@ -131,6 +141,18 @@ Clients should **not be forced to implement interfaces they don’t use**.
 **Why:**
 - Prevents “fat” interfaces
 - Reduces unused methods
+
+
+### Pros
+- Prevents fat interfaces
+- Clients depend only on what they use
+- Increases modularity and flexibility
+- Encourages cleaner, smaller interfaces
+
+### Cons
+- More interfaces → more files/classes
+- Over-splitting if misused
+- Can add some boilerplate
 
 **Java Example:**
 ```java
@@ -146,13 +168,24 @@ interface Fax { void fax(); }
 ---
 
 ## 5. D – Dependency Inversion Principle (DIP)
-**Definition:**
-- High-level modules should not depend on low-level modules.
-- Both should depend on **abstractions**.
+
+## Without DIP
+- High-level logic directly depends on low-level classes
+- Any small change in implementation forces changes everywhere
+- Testing becomes harder because everything is tightly coupled
+- Replacing something (DB, API client, service, logger, etc.) becomes painful
+
+## With DIP
+- High-level modules depend on interfaces, not concrete classes
+- You can swap implementations anytime without touching core logic
+- Code becomes flexible, testable, and easier to extend
+- You avoid tight coupling and brittle designs
 
 **Why:**
 - Reduces coupling
 - Improves testability
+
+
 
 **Java Example:**
 ```java
