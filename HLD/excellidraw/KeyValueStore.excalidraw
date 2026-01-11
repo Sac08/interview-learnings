@@ -1,7 +1,7 @@
 {
   "type": "excalidraw",
   "version": 2,
-  "source": "https://excalidraw.com",
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
   "elements": [
     {
       "id": "eCTJQHugD59eTZpJjv1o_",
@@ -640,7 +640,8 @@
         "fixedPoint": [
           0.0627179243544078,
           0.5001
-        ]
+        ],
+        "focus": 0
       },
       "endBinding": {
         "mode": "orbit",
@@ -648,7 +649,8 @@
         "fixedPoint": [
           0.18550347623174482,
           0.5001
-        ]
+        ],
+        "focus": 0
       },
       "startArrowhead": null,
       "endArrowhead": "arrow",
@@ -700,7 +702,8 @@
         "fixedPoint": [
           1.2337441006816974,
           0.5504708881835696
-        ]
+        ],
+        "focus": 0
       },
       "endBinding": null,
       "startArrowhead": null,
@@ -753,7 +756,8 @@
         "fixedPoint": [
           0.5001,
           0.5233013320005119
-        ]
+        ],
+        "focus": 0
       },
       "endBinding": null,
       "startArrowhead": null,
@@ -806,7 +810,8 @@
         "fixedPoint": [
           0.5001,
           0.6834509349088722
-        ]
+        ],
+        "focus": 0
       },
       "endBinding": {
         "mode": "orbit",
@@ -814,7 +819,8 @@
         "fixedPoint": [
           0.5001,
           0.6903701867850724
-        ]
+        ],
+        "focus": 0
       },
       "startArrowhead": null,
       "endArrowhead": "arrow",
@@ -866,7 +872,8 @@
         "fixedPoint": [
           0.08708362114726403,
           0.5001
-        ]
+        ],
+        "focus": 0
       },
       "endBinding": {
         "mode": "orbit",
@@ -874,7 +881,8 @@
         "fixedPoint": [
           0.5001,
           0.8639075702925904
-        ]
+        ],
+        "focus": 0
       },
       "startArrowhead": null,
       "endArrowhead": "arrow",
@@ -931,7 +939,8 @@
         "fixedPoint": [
           0.5185056790217006,
           0.5185056790217
-        ]
+        ],
+        "focus": 0
       },
       "endBinding": null,
       "startArrowhead": null,
@@ -1058,7 +1067,8 @@
         "fixedPoint": [
           0.5001,
           0.14686572345875484
-        ]
+        ],
+        "focus": 0
       },
       "endBinding": {
         "mode": "orbit",
@@ -1066,7 +1076,8 @@
         "fixedPoint": [
           0.5001,
           0.4005177634683501
-        ]
+        ],
+        "focus": 0
       },
       "startArrowhead": null,
       "endArrowhead": "arrow",
@@ -1119,7 +1130,8 @@
         "fixedPoint": [
           0.5001,
           0.3629240861834812
-        ]
+        ],
+        "focus": 0
       },
       "startArrowhead": null,
       "endArrowhead": "arrow",
@@ -1145,20 +1157,20 @@
       "index": "b0C",
       "roundness": null,
       "seed": 1628366899,
-      "version": 599,
-      "versionNonce": 1099085021,
+      "version": 658,
+      "versionNonce": 487369441,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1758450558342,
+      "updated": 1768138202184,
       "link": null,
       "locked": false,
-      "text": "Things to discuss:\n- Data partition : consistent hashing \n- Data Replication : \n- Consistency & Replication Factor : strong consistency (R+W>N server), week, Eventual Consistency (hinted handoff, read repair, anti-entropy repair.)\n- Inconsistency resolution : timestamp to resolve inconsistency. (latest ts for that key will win)\n- Handling failures: \n    - failure detection by heartbeat\n    - Temporary failure handling by hinted handoff\n    - permenent by running cron job with merkle tree approach \n- Write path \n- Read path",
+      "text": "Things to discuss:\n- Data partition : consistent hashing \n- Data Replication : RF = 3, next 2 nodes are replicated\n- Consistency & Replication Factor : strong consistency (R+W>N server), week, Eventual Consistency (hinted handoff, read repair, anti-entropy repair.)\n- Inconsistency resolution : timestamp to resolve inconsistency. (latest ts for that key will win)\n- Handling failures: \n    - failure detection by heartbeat\n    - Temporary failure handling by hinted handoff\n    - permenent by running cron job with merkle tree approach \n- Write path \n- Read path",
       "fontSize": 16,
       "fontFamily": 5,
       "textAlign": "left",
       "verticalAlign": "top",
       "containerId": null,
-      "originalText": "Things to discuss:\n- Data partition : consistent hashing \n- Data Replication : \n- Consistency & Replication Factor : strong consistency (R+W>N server), week, Eventual Consistency (hinted handoff, read repair, anti-entropy repair.)\n- Inconsistency resolution : timestamp to resolve inconsistency. (latest ts for that key will win)\n- Handling failures: \n    - failure detection by heartbeat\n    - Temporary failure handling by hinted handoff\n    - permenent by running cron job with merkle tree approach \n- Write path \n- Read path",
+      "originalText": "Things to discuss:\n- Data partition : consistent hashing \n- Data Replication : RF = 3, next 2 nodes are replicated\n- Consistency & Replication Factor : strong consistency (R+W>N server), week, Eventual Consistency (hinted handoff, read repair, anti-entropy repair.)\n- Inconsistency resolution : timestamp to resolve inconsistency. (latest ts for that key will win)\n- Handling failures: \n    - failure detection by heartbeat\n    - Temporary failure handling by hinted handoff\n    - permenent by running cron job with merkle tree approach \n- Write path \n- Read path",
       "autoResize": true,
       "lineHeight": 1.25
     },
@@ -1270,43 +1282,6 @@
       "lineHeight": 1.25
     },
     {
-      "id": "BcTXaP9hHYDTCnTkdJfWe",
-      "type": "text",
-      "x": 859.704021343809,
-      "y": -281.93380347085986,
-      "width": 8,
-      "height": 25,
-      "angle": 0,
-      "strokeColor": "#1e1e1e",
-      "backgroundColor": "transparent",
-      "fillStyle": "solid",
-      "strokeWidth": 2,
-      "strokeStyle": "solid",
-      "roughness": 1,
-      "opacity": 100,
-      "groupIds": [],
-      "frameId": null,
-      "index": "b0H",
-      "roundness": null,
-      "seed": 1645006145,
-      "version": 3,
-      "versionNonce": 571415439,
-      "isDeleted": true,
-      "boundElements": null,
-      "updated": 1766663578114,
-      "link": null,
-      "locked": false,
-      "text": "",
-      "fontSize": 20,
-      "fontFamily": 5,
-      "textAlign": "left",
-      "verticalAlign": "top",
-      "containerId": null,
-      "originalText": "",
-      "autoResize": true,
-      "lineHeight": 1.25
-    },
-    {
       "id": "qbUC-5jg7NCWQf_nBEjFs",
       "type": "text",
       "x": 703.704021343809,
@@ -1329,7 +1304,7 @@
       "version": 421,
       "versionNonce": 1504745505,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1766663712389,
       "link": null,
       "locked": false,
@@ -1366,7 +1341,7 @@
       "version": 211,
       "versionNonce": 1105191169,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1766663727770,
       "link": null,
       "locked": false,
@@ -1401,7 +1376,7 @@
       "version": 175,
       "versionNonce": 793502433,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1766663919025,
       "link": null,
       "locked": false,
@@ -1438,7 +1413,7 @@
       "version": 389,
       "versionNonce": 532832641,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1766664108510,
       "link": null,
       "locked": false,
@@ -1457,8 +1432,7 @@
     "gridSize": 20,
     "gridStep": 5,
     "gridModeEnabled": false,
-    "viewBackgroundColor": "#ffffff",
-    "lockedMultiSelections": {}
+    "viewBackgroundColor": "#ffffff"
   },
   "files": {
     "508dfa07d99532af7aabc823ff2f10cf7f022efd": {

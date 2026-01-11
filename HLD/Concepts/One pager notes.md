@@ -121,3 +121,39 @@ Requires server support for WebSocket protocol
 Not always ideal for simple request/response use cases
 
 --------
+JWT Token (proof that the user is authenticated, sent with every request)
+JWT enables stateless, scalable, and secure authentication by allowing services to validate requests without shared session storage
+JWT is generated ONLY by the server, never by the client.
+Flow:
+Client sends username + password
+Server verifies credentials
+Server generates JWT
+Server sends JWT back to client
+Client sends JWT in every next request
+Client cannot generate or modify JWT because:
+It doesn’t know the secret key
+Signature would become invalid
+
+---------
+Circuit breaker
+A Circuit Breaker is a resilience pattern used in distributed systems to prevent cascading failures by stopping calls to a failing service temporarily.
+
+Why it’s needed
+Prevents calling service thread exhaustion (eg timeouts happening at downstream)
+Reduces latency spikes
+Allows failed services time to recover
+Improves overall system stability
+
+Core States
+Closed ✅
+Requests flow normally
+Failures are counted
+
+Open ❌
+Requests fail immediately
+No calls to the downstream service
+
+Half-Open ⚠️
+Limited test requests allowed
+Success → Closed
+Failure → Open
