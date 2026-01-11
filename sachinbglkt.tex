@@ -1,0 +1,143 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% Resume Version 3 (ATS-safe Reapply)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{resume}
+
+\usepackage[left=0.4 in,top=0.15 in,right=0.4 in,bottom=0.3in]{geometry}
+\usepackage{hyperref}
+
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+\name{Sachin}
+\address{%
+\\ +91 7348976969
+\\ \href{mailto:sachinbglkt@gmail.com}{sachinbglkt@gmail.com}
+\\ Bangalore, India
+}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% SKILLS (Moved UP for ATS)
+%----------------------------------------------------------------------------------------
+\vspace{-10pt}
+\begin{rSection}{Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{1.5ex}} l }
+Programming: & Java, C, Data Structures, Algorithms \\
+Backend: & Spring Boot, REST APIs, Kafka, Spark, Maven, Git, Docker, RocksDB \\
+Datastores: & Cassandra, BigQuery, Azure SQL, PostgreSQL, MySQL (GCP) \\
+Frontend: & ReactJS \\
+\end{tabular}
+
+\end{rSection}
+
+\vspace{-6pt}
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Professional Experience}
+
+\begin{rSubsection}{Software Engineer III}{Walmart Global Tech}{Jul 2023 -- Present}{}
+\vspace{-3pt}
+
+\item Implemented a configurable extended-attributes framework for Parts Finder, enabling richer product metadata and lowering auto-parts return rates.
+\item Built a distributed ingestion pipeline handling \textbf{multi-million fitment records daily}, optimized for throughput, fault tolerance, and scalability.
+\item Created a Spark-based analytics workflow over item and fitment datasets, powering near real-time reporting via BigQuery.
+\item Introduced priority-based ingestion logic by ranking upstream data sources, improving freshness and reliability of fitment data.
+\item Delivered store-facing service workflows that reduced oil service handling time by \textbf{~5 minutes} and tire installation turnaround by \textbf{~10 minutes}.
+
+\item \textbf{Environment:} Java, Spring Boot, Kafka, Spark, RocksDB, Cassandra, BigQuery, Azure SQL
+
+\end{rSubsection}
+
+\vspace{-7pt}
+
+\begin{rSubsection}{Software Engineer II}{Walmart Global Tech}{Jul 2021 -- Jul 2023}{}
+\vspace{-3pt}
+
+\item Engineered a spreadsheet-driven fitment upload solution adopted by \textbf{9,000+ independent sellers}, replacing dependence on ACES XML standards.
+\item Enhanced internal dashboards for Parts Finder and catalog quality, enabling teams to monitor ingestion accuracy and item health metrics.
+\item Partnered with product and data teams to roll out seller-facing features with measurable adoption.
+
+\item \textbf{Environment:} Java, ReactJS, PostgreSQL, Metabase, Looker Studio
+
+\end{rSubsection}
+
+\vspace{-7pt}
+
+\begin{rSubsection}{Software Engineer Intern}{Walmart Global Tech}{Jan 2021 -- Jun 2021}{}
+\vspace{-3pt}
+
+\item Built shared UI and backend components reused across multiple catalog services.
+\item Authored end-to-end test suites and fixed production defects in Walmart’s internal catalog management tooling.
+
+\end{rSubsection}
+
+\end{rSection}
+
+\vspace{-8pt}
+
+%----------------------------------------------------------------------------------------
+% EDUCATION (Moved DOWN intentionally)
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Education}
+
+{ M.Tech — Computer Science and Engineering, \textbf{IIIT Bangalore} } \hfill {2019 -- 2021}
+\\ GPA: 3.30 / 4.0
+
+\vspace{3pt}
+
+{ B.E — Computer Science and Engineering, \textbf{KLESCET, Belagavi} } \hfill {2015 -- 2019}
+\\ GPA: 8.36 / 10
+
+\end{rSection}
+
+\vspace{-8pt}
+
+%----------------------------------------------------------------------------------------
+% PROJECTS
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Selected Projects}
+
+\begin{rSubsection}{Student Collaboration Portal}{IIIT Bangalore}{Feb 2020}{}
+\vspace{-3pt}
+
+\item Designed a student-facing platform aggregating academic resources, interview experiences, and mock interview scheduling.
+\item Focused on front-end implementation with emphasis on usability and navigation.
+
+\end{rSubsection}
+
+\vspace{-6pt}
+
+\begin{rSubsection}{Autonomous Traffic Control System}{KLESCET}{Aug 2018}{}
+\vspace{-3pt}
+
+\item Implemented an image-processing based traffic optimization system using lane density estimation.
+\item Pilot-tested on a live city road; awarded \textbf{Runner-up} at K-tech Innovation Hub Exhibition.
+
+\end{rSubsection}
+
+\end{rSection}
+
+\vspace{-10pt}
+
+%----------------------------------------------------------------------------------------
+% ACHIEVEMENTS
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Achievements}
+
+. Two-time recipient of Walmart \textbf{Bravo Award} for high-impact contributions. \\
+. Institute Rank 1 holder in 1st year engineering. \\
+. State-level recognition for securing highest SSC marks at examination center. \\
+. Placed in \textbf{top 1\%} nationwide in GATE 2019. \\
+. Qualified for onsite round of ACM-ICPC (IIIT Pune region). \\
+. Winner of multiple competitive programming events across inter-college platforms.
+
+\end{rSection}
+
+\end{document}

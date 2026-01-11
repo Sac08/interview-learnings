@@ -31,3 +31,76 @@ Action:
 
 Result:
 “As a result, the feature was delivered on time, with the critical bugs resolved before my surgery. My manager appreciated the proactive escalation and documentation, and the teammate felt supported rather than blamed. This approach minimized risk, maintained quality, and ensured smooth handover while keeping the team morale intact.”
+
+## the most challenging project you worked & why is it challenging & how you solved it? 
+
+this is for developing scalable ingestion platform, there were many challanges like 
+ - a bad / incorrect file should not block ingestion of valid files (i solved by adding checks initially at acceptance & failing & also added failure isolation i.e row level & file level errors)
+ - incase of issues we should add retries with idempodent & no duplication (chosen cassandra schema carefully so data would be idempotent) and also i had one suggestion of dedupe logic (hashing the file & storing)
+ - burst of traffic should not put load on cassandra / nodes (for this kept max 3 jobs processing at a time & controlled scheduling)
+ - correctness was very important as in site there will be more returns (made sure ingested data is very accurate comparing with ACA & transactible or not with item data ensuring correct & stock items are returned in the response)
+ - sometimes sellers used to see file completion but still at the site the fitment used to say not fit (for this it was necessary to have some consistency model not compromising the speed)
+ - the specific features that required some additional read & writes for them added event driven flow so that ingestion doesnt gets slow down 
+
+
+ ## What are your career goals? (2–3 years)
+
+“In the next 2–3 years, I want to grow as a strong backend engineer who can design and own large, reliable systems.” Longer term, I see myself mentoring others and influencing design decisions across systems.
+
+
+## What are dealbreakers for you while choosing an opportunity?
+I don’t have rigid dealbreakers, but a few things matter to me. 
+“No ownership—where engineers just execute tickets without understanding the system.”
+“Repeated production issues without addressing root causes.”
+
+
+## Tell me about a situation when you had a conflict with a teammate.
+There was an initiative shared by leadership where any team could propose a solution, and it was important for visibility across teams.
+
+The problem involved generating coverage data for vehicles, which required reverse querying compared to how our data was stored in Cassandra. A senior teammate suggested onboarding the data into a new system like a data warehouse or a wide-column store to support these queries.
+
+I had a different view. My concern was that onboarding a new datastore would significantly delay delivery, and since this was an open initiative, another team might deliver faster.
+
+Instead of pushing back directly, I suggested that we first clarify the actual requirements. I reached out to leadership to understand the expected number of vehicles, acceptable data staleness, and the time range they were interested in.
+
+Once we had that clarity, it turned out the requirement was mostly historical data for a specific vehicle category, and real-time freshness wasn’t critical.
+
+Based on this, I proposed a simpler approach using our existing APIs. I generated a monthly coverage report using multi-threaded API calls and built a small React page to present the data.
+
+We were able to deliver the solution within 10–15 days, and leadership appreciated both the speed and the pragmatic approach. The conflict was resolved by aligning on requirements rather than debating the technology.
+
+
+## Tell me about a time you had a disagreement with your manager
+At one point, we were discussing how to approach a leadership-driven request where multiple teams could propose solutions. My manager initially leaned toward a more comprehensive long-term solution, even though it required onboarding new infrastructure and a longer delivery timeline.
+
+I was concerned that this approach might delay delivery and reduce our chances of adding value quickly, especially since the problem was still not clearly scoped.
+
+Instead of pushing back emotionally, I asked if we could first validate the actual requirements. I reached out to leadership to clarify how much data was really needed, the acceptable staleness, and the vehicle categories they cared about.
+
+Based on those discussions, it became clear that a simpler solution using our existing APIs would meet the immediate need. I shared this proposal with my manager, along with the risks and benefits of both approaches.
+
+My manager agreed to try the simpler approach first. We delivered a working solution within about two weeks, and leadership appreciated the speed and clarity.
+
+**** later on we wanted to migrate all of our analytics data from postgres to BQ because of data growth, so i migrated this one as well & showed in looker dashboard (so long term is taken care)
+
+
+## Tell me about a time you failed. How did you deal with the situation?
+We had a requirement from Product to introduce a new Excel template for sellers. After the development was completed, Product asked us to hold off on releasing it.
+
+I felt that significant effort had went there & deploying the change would still give visibility and more wins to the team, and my manager was aligned with this. To minimize risk, I proposed deploying it behind a feature flag turned off, so it wouldn’t be exposed to users.
+
+Product was okay with this approach, and we went ahead with the deployment.
+
+However, over time, the feature kept getting delayed due to shifting priorities and product scope changes. Nearly a year later, the feature is still not live.
+
+The downside was that the dormant code increased maintenance overhead. Every new change in that area required additional testing, the codebase became slightly bloated, and the cost of keeping the feature compatible kept increasing.
+
+In hindsight, while the intention was good, I underestimated the long-term cost of carrying unfinished features in production.
+
+how i dealt - I also aligned with the new Product Manager to either commit to shipping it or plan a clean removal if it no longer made sense
+
+This taught me that feature flags reduce user risk, but they don’t eliminate maintenance cost. and also clear buisiness alignment on deployment timelines
+
+
+## What’s the Number One Accomplishment You’re Most Proud Of? 
+talk about dynamic extended attribute, i identified this myself the pain point proposed dynamic way of doing to avoid manual task it used to happen 

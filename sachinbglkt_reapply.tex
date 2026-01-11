@@ -1,0 +1,151 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Re-apply Resume (copy)
+% - This file is a copy of `sachinbglkt.tex` with ID placeholders
+% - Replace the values of `\CandidateID` and `\ResumeID` before compiling
+% - Compile with `pdflatex sachinbglkt_reapply.tex`
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%\tPACKAGES AND OTHER DOCUMENT CONFIGURATIONS 
+%----------------------------------------------------------------------------------------
+\documentclass{resume} % Use the custom resume.cls style 
+
+\usepackage[left=0.4 in,top=0.15 in,right=0.4 in,bottom=0.3in]{geometry} % Document margins
+\usepackage{hyperref} % For clickable links
+
+% --- ID placeholders ---
+% Set your candidate / resume IDs here before re-applying
+\newcommand{\CandidateID}{REPLACE_WITH_CANDIDATE_ID}
+\newcommand{\ResumeID}{REPLACE_WITH_RESUME_ID}
+
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+\name{Sachin} % Your name 
+\address{%
+\\ +91 7348976969 
+\\ \href{mailto:sachinbglkt@gmail.com}{sachinbglkt@gmail.com} 
+\\ BANGALORE, IN
+}
+
+\begin{document}
+% \begin{rSection}{Objective}
+% Seeking a position that will enable me to use my programming skills.
+% \end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%\tEDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\vspace{-10pt}
+\begin{rSection}{Education}
+{ MTech in Computer Science and Engineering, \textbf{IIIT Bangalore} ,  3.30/4} \hfill {2019-2021}
+\\
+{ B.E in Computer Science and Engineering , \textbf{KLESCET, Belagavi}  8.36/10} \hfill {2015-2019}
+
+\end{rSection} 
+\vspace{-7pt}
+
+% Small Identifiers section for re-application convenience
+\vspace{-7pt}
+\begin{rSection}{Identifiers}
+{\bf Candidate ID:} \CandidateID \\
+{\bf Resume ID:} \ResumeID
+\end{rSection}
+\vspace{-7pt}
+
+\begin{rSection}{Skills} \itemsep -3pt  
+
+\begin{tabular}{ @{} >{\bfseries}l @{@\hspace{1.5ex}} l }
+Languages: & Java, C, Data Structures and Algorithms \\
+Technologies: & Spring Boot, Apache Kafka, Apache Spark, REST APIs, Maven, Git, Docker, RocksDB, ReactJS \\
+Databases: & Cassandra, Azure SQL, BigQuery, PostgreSQL, GCP MySQL \\
+\end{tabular}
+
+\end{rSection}  
+
+\vspace{-5pt}
+\begin{rSection}{Work Experience}
+
+
+% \end{rSubsection}
+\begin{rSubsection}{SDE - III (July 2023 - Present)}{\textbf{Walmart Global Tech}}{} 
+
+\vspace{-3pt}
+\item Designed and implemented a dynamic extended-attributes feature for the Parts Finder, reducing product returns and improving conversion rates for auto-parts purchases.
+\item Contributed to the design and development of a \textbf{scalable data ingestion platform} processing millions of fitment records daily with high availability and performance.
+\item Architected and implemented \textbf{Fitment Analytics} Platform by processing Walmart’s item and fitment data using Spark and BigQuery, enabling scalable, low-latency reporting for downstream teams.
+\item Developed a content ranking system for fitment, prioritizing data ingestion based on the rank of different data sources. 
+\item Developed the Electronic Service Manual, reducing oil change order \textbf{processing time by 5 minutes} and tire installation time by \textbf{10 minutes} at Walmart store.
+
+\item \textbf{Technologies:} Java, Spring Boot, Spark, RocksDb, Kafka, Cassandra, Azure SQL, BigQuery, GCP MySQL
+
+\end{rSubsection}
+\vspace{-7pt}
+\begin{rSubsection}{SDE - II (July 2021 - July 2023)}{\textbf{Walmart Global Tech}}{} 
+
+\vspace{-3pt}
+
+\item Designed and developed an Excel-based fitment ingestion system used by \textbf{9,000+ small sellers}, eliminating reliance on costly ACES XML and giving Walmart a strategic advantage over platforms like Amazon and eBay.
+\item Contributed to the development of the \textbf{Parts Finder and Content Quality Dashboards}, implementing features that provide insights into fitment data ingestion and item quality, respectively.
+
+
+\item \textbf{Technologies:} Java, React, Metabase, Looker Studio, PostgreSQL, Maven
+
+
+\end{rSubsection}
+
+\vspace{-7pt}
+\begin{rSubsection}{SDE - Intern (Jan 2021 - Jun 2021)}{\textbf{Walmart Global Tech}}{} 
+
+\vspace{-3pt}
+
+% \item Designed and developed a MiniSql engine using Java.
+\item Developed reusable component libraries for use across the Walmart catalog organization, enhancing consistency and efficiency.
+\item Written E2E test scripts and resolved numerous bugs in the Mantis tool which is Walmart's item catalog dashboard, enhancing system stability and reliability.
+
+
+\end{rSubsection}
+
+\end{rSection}
+\vspace{-10pt}
+\begin{rSection}{PROJECTS}
+
+\begin{rSubsection}{Student Collaboration Portal - IIITB (Feb. 2020)}
+{IIIT Bangalore}{}{}  %June 2016 - November 2016
+
+\vspace{-3pt}
+
+\item Developed a portal providing essential information for IIITB students, including modules for Previous Year Question Papers, Interview Experiences, and a Mock Interview Scheduler.
+\item Focused on front-end development, enhancing user interface and experience.
+
+\end{rSubsection}
+
+\vspace{-10pt}
+
+\begin{rSubsection}{Autonomous Traffic Control System (Aug. 2018)}{KLESCET}{} %January 2016 - April 2016
+
+\vspace{-7pt}
+
+\item Developed a system to address issues in traditional traffic management by using image processing algorithms to generate lane reference images.
+\item Successfully tested in a Belgaum City lane with approval from the Commissioner of Belgaum, achieving satisfactory results. Awarded \textbf{Runner-up at the K-tech Innovation} Hub Project Exhibition.
+ 
+\end{rSubsection}  
+
+\end{rSection}
+
+\vspace{-10pt}
+
+\begin{rSection}{Academic \& Work Achievements} \itemsep -1pt    
+\setlength{\leftskip}{-1em}
+
+. \textbf{Two-time Bravo Award} winner for exceptional performance and exceeding work expectations. \\
+. Institute Academic Award for being \textbf{Topper} in second semester engineering (one out of 500). \\
+. Awarded by Dr. Mukhyamantri Chandru (Govt. of Karnataka) for securing \textbf{Highest Marks in Centre} (SSC). \\
+. \textbf{Top 1\%} scorer in GATE 2019 exam. \\
+. Cleared online contest and selected for onsite round (Dec. 2018) in ACM-ICPC (IIIT Pune region). \\
+. \textbf{First place} in competitions: Code-Zilla (Mar. 2017, JCE BGM), TechnoQuiz (Apr. 2017, Google-IO Extended), CodeWar (Mar. 2018, KLESCET BGM), and Intra-College Coding Competition (Feb. 2019).
+
+\end{rSection}
+
+\end{document}

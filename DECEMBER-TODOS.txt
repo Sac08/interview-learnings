@@ -1,0 +1,21 @@
+# what i have to cover
+10 new HLD questions 
+practice 3-4 new machine coding questions
+complete strivers (special empasis on graph + DP)
+Concepts :
+ - Concurrency & multi threading structured study (with notes)
+ - Kafka revise
+ - cassandra revise
+ - Spark basic study (with notes)
+
+ 
+
+25th Dec to 4th Jan
+Concepts :
+ - Concurrency & multi threading structured study (with notes)
+ - Kafka revise
+ - cassandra revise
+ - Spark basic study (with notes)
+ - 10 new HLD questions 
+ - revise old HLD's
+ - strivers graph
