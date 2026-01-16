@@ -30,6 +30,8 @@ A/B Testing
 - at site, the feature was rolled out to specific users and disabled for few
 - helps in effectiveness of feature
 
+sanity test post deployment
+
 
 ---------------
 

@@ -134,6 +134,9 @@ Client cannot generate or modify JWT because:
 It doesn’t know the secret key
 Signature would become invalid
 
+If a JWT is intercepted, the attacker can impersonate the user until token expiry. 
+To limit impact, systems use short-lived access tokens, secure storage, HTTPS, refresh tokens with rotation, and minimal scopes. JWT integrity prevents tampering but not replay attacks.
+
 ---------
 Circuit breaker
 A Circuit Breaker is a resilience pattern used in distributed systems to prevent cascading failures by stopping calls to a failing service temporarily.
@@ -157,3 +160,38 @@ Half-Open ⚠️
 Limited test requests allowed
 Success → Closed
 Failure → Open
+---------
+REST
+Resource-based API style over HTTP
+Uses standard verbs: GET, POST, PUT, DELETE
+Data format: mostly JSON
+Stateless, cache-friendly
+Simple, widely adopted
+Use when: CRUD APIs, public APIs, web/mobile backends
+cons : either over / under data sharing
+
+GraphQL
+Query language for APIs
+Single endpoint
+Client decides exact data shape so no over/under-fetching
+Strong schema & type system
+Use when: Complex UI data needs, mobile apps, frontend flexibility
+cons : backend complexity
+
+gRPC
+High-performance RPC framework
+Uses Protocol Buffers (binary)
+Built on HTTP/2
+Strong typing, code generation
+Supports streaming
+Use when: Microservices, low latency, high throughput systems
+
+SOAP
+XML-based communication protocol
+Strict contracts via WSDL
+Built-in security & transactions
+Heavy and verbose
+Use when: Legacy enterprise systems, banking, government integrations
+
+One-liner memory trick
+REST = Simple, GraphQL = Flexible, gRPC = Fast, SOAP = Strict
