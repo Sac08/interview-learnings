@@ -1,4 +1,6 @@
-🎤 Mock Question #1
+## Tell me about yourself 
+Hi, I’m Sachin Bagalakoti. I’ve been with Walmart for about five years, and right now I’m part of a team called Fitment. What we do is solve a really crucial problem for customers buying auto parts: we ensure that the parts they choose will actually fit their vehicle. For example, we help them avoid ordering a wiper blade that doesn’t match their car, which saves returns and revenue. In a nutshell, I’ve been handling how we match parts to vehicles to improve customer experience and reduce returns.
+
 
 ## "Tell me about a time you had to work under a tight deadline. How did you handle it, and what was the outcome?"
 
@@ -43,6 +45,24 @@ this is for developing scalable ingestion platform, there were many challanges l
  - the specific features that required some additional read & writes for them added event driven flow so that ingestion doesnt gets slow down 
 
 
+ ## scalable ingestion platform
+ #### challanges : 
+ - explain above 
+ #### mistakes/failures :
+- logging & observability were added later instead of day 1
+ #### Technical Decisions : 
+ - this comes in schema inorder to fitment to work we need (mpn, ptid, brand & vehicle info & some other mandatory) - big suppliers send varying additional data as well i was of the opinion to dump entire data as is into db, collegues told unnecessary storage would fill up & all. In extended attr feature those info was helpful
+ - also for auto light feature they wanted to read & write in ingestion itself which will slow down instead i suggested event driven kafka consr service 
+
+ #### Enjoyed:
+- i was focusing on designing a platform such that any new adapter comes in it should fit into existing architecture eg VCDB pcdb
+
+#### conflicts
+- there were lot of design discussions on validations, storage, schema but we have created the vibe in team such that it all feels like discussion & we dont take that as personally. 
+
+#### what you would do differently
+- logging & observability were from day 1
+
  ## What are your career goals? (2–3 years)
 
 “In the next 2–3 years, I want to grow as a strong backend engineer who can design and own large, reliable systems.” Longer term, I see myself mentoring others and influencing design decisions across systems.
@@ -57,7 +77,7 @@ I don’t have rigid dealbreakers, but a few things matter to me.
 ## Tell me about a situation when you had a conflict with a teammate.
 There was an initiative shared by leadership where any team could propose a solution, and it was important for visibility across teams.
 
-The problem involved generating coverage data for vehicles, which required reverse querying compared to how our data was stored in Cassandra. A senior teammate suggested onboarding the data into a new system like a data warehouse or a wide-column store to support these queries.
+The problem involved generating coverage data for vehicles, which required reverse querying compared to how our data was stored in Cassandra. teammate suggested onboarding the data into a new system like a data warehouse or a wide-column store to support these queries.
 
 I had a different view. My concern was that onboarding a new datastore would significantly delay delivery, and since this was an open initiative, another team might deliver faster.
 
@@ -104,3 +124,15 @@ This taught me that feature flags reduce user risk, but they don’t eliminate m
 
 ## What’s the Number One Accomplishment You’re Most Proud Of? 
 talk about dynamic extended attribute, i identified this myself the pain point proposed dynamic way of doing to avoid manual task it used to happen 
+
+## what was your managers recent feedback to you (pro & con)
+pros 
+- relaible in meeting deadlines
+- proactive in team discussions
+-  i clearly & quickly adapt the requirement & align with stakeholders
+- velocity of delivery & effective collaboration with team
+
+cons
+- delegation of tasks : for dynamic extended attrs features mostly i was working on the task (I tend to handle things myself to ensure quality) the feedback was to delegate more and trust the team
+
+
