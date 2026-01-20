@@ -75,19 +75,7 @@ I don’t have rigid dealbreakers, but a few things matter to me.
 
 
 ## Tell me about a situation when you had a conflict with a teammate.
-There was an initiative shared by leadership where any team could propose a solution, and it was important for visibility across teams.
-
-The problem involved generating coverage data for vehicles, which required reverse querying compared to how our data was stored in Cassandra. teammate suggested onboarding the data into a new system like a data warehouse or a wide-column store to support these queries.
-
-I had a different view. My concern was that onboarding a new datastore would significantly delay delivery, and since this was an open initiative, another team might deliver faster.
-
-Instead of pushing back directly, I suggested that we first clarify the actual requirements. I reached out to leadership to understand the expected number of vehicles, acceptable data staleness, and the time range they were interested in.
-
-Once we had that clarity, it turned out the requirement was mostly historical data for a specific vehicle category, and real-time freshness wasn’t critical.
-
-Based on this, I proposed a simpler approach using our existing APIs. I generated a monthly coverage report using multi-threaded API calls and built a small React page to present the data.
-
-We were able to deliver the solution within 10–15 days, and leadership appreciated both the speed and the pragmatic approach. The conflict was resolved by aligning on requirements rather than debating the technology.
+One example of handling conflict was when our leadership launched an initiative allowing any team to propose a visibility solution for vehicle coverage data. My teammates suggested onboarding the data into a new warehouse, but I was concerned that would slow us down and another team might beat us to the punch. Instead of debating tech choices right away, I reached out to leadership to clarify the exact requirements—like how fresh the data really needed to be. Once we knew they mostly needed historical data and real-time updates weren’t critical, I proposed a simpler solution using our existing APIs and a lightweight React-based tool. We delivered the solution in 15 days, and leadership really appreciated the speed and pragmatism. In the end, we resolved the conflict by focusing on the actual requirements rather than getting stuck on the technology debate.
 
 
 ## Tell me about a time you had a disagreement with your manager
@@ -105,21 +93,9 @@ My manager agreed to try the simpler approach first. We delivered a working solu
 
 
 ## Tell me about a time you failed. How did you deal with the situation?
-We had a requirement from Product to introduce a new Excel template for sellers. After the development was completed, Product asked us to hold off on releasing it.
-
-I felt that significant effort had went there & deploying the change would still give visibility and more wins to the team, and my manager was aligned with this. To minimize risk, I proposed deploying it behind a feature flag turned off, so it wouldn’t be exposed to users.
-
-Product was okay with this approach, and we went ahead with the deployment.
-
-However, over time, the feature kept getting delayed due to shifting priorities and product scope changes. Nearly a year later, the feature is still not live.
-
-The downside was that the dormant code increased maintenance overhead. Every new change in that area required additional testing, the codebase became slightly bloated, and the cost of keeping the feature compatible kept increasing.
-
-In hindsight, while the intention was good, I underestimated the long-term cost of carrying unfinished features in production.
-
-how i dealt - I also aligned with the new Product Manager to either commit to shipping it or plan a clean removal if it no longer made sense
-
-This taught me that feature flags reduce user risk, but they don’t eliminate maintenance cost. and also clear buisiness alignment on deployment timelines
+she was prioriatizing more buisiness initiative & less scope for tech debts 
+because of this any issue comes in middle dev's just solve that by temp fix without looking at RCA and all
+for support tickets also creating FAQ instead of just we solving them 
 
 
 ## What’s the Number One Accomplishment You’re Most Proud Of? 
@@ -136,3 +112,9 @@ cons
 - delegation of tasks : for dynamic extended attrs features mostly i was working on the task (I tend to handle things myself to ensure quality) the feedback was to delegate more and trust the team
 
 
+## how do you mentor your juniors to deliver a feature ? 
+I mentor juniors and interns by first giving them clear context on the problem, business impact, and how the feature fits into the existing system so they understand the “why” before coding. I then help break the requirement into small, achievable tasks and ask them to propose an initial design, which we review together to catch edge cases early. During implementation, I stay available for guidance without hand-holding, encourage them to reason through trade-offs, and review code with detailed, constructive feedback focused on quality, performance, and maintainability. After delivery, we do a short retrospective so they learn from the experience and gradually take full ownership of features end to end.
+
+
+## theres a timeline fixed for feature delivery & also critical bug i found which alter timelines how do you convince PM
+If there is a fixed timeline but I find a critical bug, I first make sure I fully understand how serious the bug is and what will happen if we ignore it. Then I talk to the PM with clear and simple points: what the bug is, how it affects users or the business, and the risk of releasing without fixing it. I also suggest options, like fixing the bug first and delaying the feature a bit, reducing the feature scope, or adding a temporary workaround. This way, the PM can choose the best option, and the decision is based on impact and risk, not just delay.
